@@ -1,8 +1,10 @@
+import { createNote } from "@/app/actions/notes";
+
 const NewNote = () => {
   return (
     <div>
       <h2>Create a new note</h2>
-      <form>
+      <form action={createNote}>
         <div>
           <label>
             Content
